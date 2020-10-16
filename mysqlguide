@@ -1,0 +1,6 @@
+CREATE TABLE students(idno int NOT NULL AUTO_INCREMENT, firstName varchar(15) NOT NULL, lastName varchar(15) NOT NULL,age int NOT NULL,gender varchar(6) NOT NULL,phoneNumber varchar(11) NOT NULL, course varchar(20) NOT NULL, yearLevel int NOT NULL, PRIMARY KEY(idno));
+
+
+CREATE TABLE admin(adminid int NOT NULL AUTO_INCREMENT,firstName varchar(15) NOT NULL, lastName varchar(15) NOT NULL,email varchar(20) NOT NULL UNIQUE,password text NOT NULL,PRIMARY KEY(adminid));
+
+
