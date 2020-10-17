@@ -11,4 +11,7 @@ This Web app is built using Python Flask, HTML+CSS, jQuery and mySQL database, t
 ![register](https://user-images.githubusercontent.com/60516646/96337312-c9c3a080-10b8-11eb-89b0-b909b7c60de6.png)
 ---
 > - `Create` `Read` `Update` `Delete` student data.
-* Create student data
+![addstudentdata](https://user-images.githubusercontent.com/60516646/96337536-8c601280-10ba-11eb-8a08-89857eba143d.png)
+![updatestudentdata](https://user-images.githubusercontent.com/60516646/96337542-9550e400-10ba-11eb-841d-4934bdd6fd79.png)
+![deletestudentdata](https://user-images.githubusercontent.com/60516646/96337538-8ff39980-10ba-11eb-98cb-eb76412f3ff3.png)
+#### NOTE: In able to read all the data from the database you can just reload or press the "Home" in the navbar. 
