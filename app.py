@@ -109,22 +109,27 @@ def signin():
 #path for registration 
 @app.route("/register",methods=['POST','GET'])
 def register():
-	msg = ""
+	msg1 = "" #this message if for success
+	msg2 = "" #this message if for error
 	if request.method=='POST':
 		firstNameEntry = request.form['firstName']
 		lastNameEntry = request.form['lastName']
 		emailEntry = request.form['email']
 		passwordEntry = request.form['password']
+		confirmPasswordEntry = request.form['confirmPassword']
 		cur = mysql.connection.cursor()
 		cur.execute("""SELECT * FROM admin WHERE email LIKE %s""",[emailEntry])
 		account = cur.fetchone()
-		if account:
-			msg="Account Already Exist!"
+
+		if passwordEntry!=confirmPasswordEntry:
+			msg2="Password doesn't match!"
+		elif account:
+			msg2="Account Already Exist!"
 		else:
 			cur.execute("""INSERT INTO admin(firstName,lastName,email,password) VALUES (%s,%s,%s,%s)""",(firstNameEntry,lastNameEntry,emailEntry,passwordEntry));
 			mysql.connection.commit()
-			msg="Account added successfully, Login now!"
-	return render_template('register.html',msg=msg)
+			msg1="Account added successfully, Login now!"
+	return render_template('register.html',msg1=msg1,msg2=msg2)
 
 
 
