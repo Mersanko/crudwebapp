@@ -7,13 +7,13 @@ This Web app is built using Python Flask, HTML+CSS, jQuery and mySQL database, t
 ---
 #### Dependecies
 > - Python virtual env
-- Virtualenv is used to manage Python packages for different projects. Using virtualenv allows you to avoid installing Python packages globally which could break system tools or other projects. You can install virtualenv using pip. 
+Virtualenv is used to manage Python packages for different projects. Using virtualenv allows you to avoid installing Python packages globally which could break system tools or other projects. You can install virtualenv using pip. 
 > - Python Flask (with extensions)
-- Flask is a web development micro-framework in Python.
+Flask is a web development micro-framework in Python.
 > - Python Flask-MySQLdb
-- Flask-MySQLdb provides MySQL connection for Flask.
+Flask-MySQLdb provides MySQL connection for Flask.
 > - Python pyyaml
-- yaml is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted in short in it use in the confiuration of the database connection.
+yaml is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted in short in it use in the confiuration of the database connection.
 ---
 #### Important Features of this Web App
 ###             
